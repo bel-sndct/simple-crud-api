@@ -1,6 +1,6 @@
 # SIMPLE CRUD API
 
-#### Tools
+## Tools
 
 * @types/node
   >  npm install @types/node
@@ -15,7 +15,7 @@
   > npm install --save-dev @types/uuid
   > npm install uuid
 
-#### How to run
+## How to run
 
 Without nodemon:
   > npm run start
