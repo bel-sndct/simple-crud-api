@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^8.3.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  },
+  "name": "simple-crud-api",
+  "description": "SIMPLE CRUD API",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "start:dev": "nodemon --exec ts-node main.ts",
+    "start:prod": "SET NODE_ENV=production && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bel-sndct/simple-crud-api.git"
+  },
+  "author": "bel-sndct",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bel-sndct/simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/bel-sndct/simple-crud-api#readme"
+}
