@@ -12,7 +12,15 @@ const isUUID = (id: string) => {
         _uuid[2].length === 4 &&
         _uuid[3].length === 4 &&
         _uuid[4].length === 12
-    ) return true;
+    ) {
+        id.split('').forEach(elem => {
+            if (
+                (elem <= 'a' && elem >= 'z') || (elem <= 'A' && elem >= 'Z') ||
+                (elem <= '0' && elem >= '9') || elem !== '-'
+            ) return false;
+        });
+        return true;
+    }
     else return false;
 }
 
